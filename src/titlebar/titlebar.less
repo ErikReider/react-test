@@ -1,19 +1,18 @@
 @import "../assets/colors.less";
 
-.titlebar {
-    background-color: white;
+#mainNav {
     min-height: 3.5rem;
+    background-color: white;
 
     .fa {
-        box-sizing: border-box;
-        margin: 0 4px;
+        margin-left: 4px;
     }
 
     .navbar-toggler {
         font-size: 80%;
         padding: 0.75rem;
-        color: @primary !important;
-        border: 2px solid @primary !important;
+        color: @primary;
+        border: 1px solid @primary;
         &:focus {
             outline: none;
         }
@@ -37,7 +36,6 @@
             }
         }
     }
-
     @media (min-width: 1200px) {
         padding-top: 0;
         padding-bottom: 0;

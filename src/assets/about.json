@@ -1,0 +1,27 @@
+{
+    "about_me": "I'm a hard working developer who loves programming, tinkering with Linux, and playing games. Some of my other hobbies are going to the gym, building computers, and watching american football.",
+    "education": [
+        {
+            "title": "NTI Gymnasiet Uppsala 2020 - 2021",
+            "description": "Forth technical year"
+        },
+        {
+            "title": "NTI Gymnasiet Uppsala 2017 - 2020",
+            "description": "Technology program"
+        }
+    ],
+    "skills": {
+        "languages": ["Flutter", "JavaScript", "C#", "HTML5", "pugJS", "CSS3", "Less", "SCSS"],
+        "tools": [
+            "GNU Linux",
+            "Bash",
+            "Visual Studio Code",
+            "Bootstrap",
+            "Git",
+            "GitHub",
+            "GitLab",
+            "GitLab CI/CD"
+        ]
+    },
+    "workflow": ["SCRUM", "Agile programming", "XP"]
+}

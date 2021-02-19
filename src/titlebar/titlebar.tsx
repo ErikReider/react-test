@@ -1,5 +1,5 @@
 import "./titlebar.css";
-import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap";
 import "font-awesome/css/font-awesome.css";
 
 import React from "react";
@@ -30,7 +30,7 @@ export default class Titlebar extends React.Component<IProps, IState> {
 
     render() {
         return (
-            <nav className="titlebar navbar navbar-expand-lg navbar-light fixed-top">
+            <nav className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
                 <div className="container">
                     <a className="navbar-brand js-scroll-trigger" href="#page-top">
                         Home
@@ -43,15 +43,12 @@ export default class Titlebar extends React.Component<IProps, IState> {
                         aria-controls="navbarResponsive"
                         aria-expanded="false"
                         aria-label="Toggle navigation"
-                        onClick={() => this.toggleDropDown(!this.state.toggled)}
                     >
                         Menu
                         <FA name="fas fa-bars"/>
                     </button>
                     <div
-                        className={
-                            (this.state.toggled ? "navbar-shrink" : "") + "collapse navbar-collapse"
-                        }
+                        className="navbar-collapse collapse"
                         id="navbarResponsive"
                     >
                         <ul className="navbar-nav ml-auto">
