@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="./login/css/style.css">
+    <link rel="stylesheet" href="./login/css/login.css">
+    <link rel="stylesheet" href="./login/css/signup.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyBaL8t7Ok1pohpx6qysELJSh5Y44wEOYBw",
+            authDomain: "webb-slutprojekt.firebaseapp.com",
+            databaseURL: "https://webb-slutprojekt.firebaseio.com",
+            projectId: "webb-slutprojekt",
+            storageBucket: "webb-slutprojekt.appspot.com",
+            messagingSenderId: "407648790253",
+            appId: "1:407648790253:web:19efc3f95cf71c61824ee4",
+            measurementId: "G-N39356P6R6"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="login/js/index.js"></script>
+</head>
+
+<body>
+    <div id="LS_Card">
+        <div class="LS_PaneParent" id="LS_PaneParent">
+            <div class="LoginPane LS_Panes">
+                <span class="LS_title">Sign In</span>
+                <div class="LS_Content">
+                    <div class="input_border">
+                        <input class="LS_Input" id="LS_EmailInput" type="email" placeholder="Email" />
+                    </div>
+
+                    <div class="input_border">
+                        <input class="LS_Input" id="LS_PasswordInput" type="password" placeholder="Password" />
+                    </div>
+
+                    <span class="LP_forgot"> Forgot your password?</span>
+                    <span id="LP_register" onclick="switchMethod('go_register')">No account? Register
+                        here</span>
+                    <div id="LP_SignIn" class="button" onclick="/* signInClick() */ signIn()">Let's Go!</div>
+                </div>
+            </div>
+            <div class="RegisterPane LS_Panes">
+                <span class="RP_title">Sign Up</span>
+                <div class="RP_Content">
+                    <div class="input_border">
+                        <input id="RP_UsernameInput" type="text" placeholder="Username" />
+                    </div>
+                    <div class="input_border">
+                        <input id="RP_EmailInput" type="email" placeholder="Email" />
+                    </div>
+
+                    <div class="input_border">
+                        <input id="RP_PasswordInput" type="password" placeholder="Password" />
+                    </div>
+
+                    <span id="RP_register" onclick="switchMethod('go_login')">Already a member? Login here</span>
+                    <div id="RP_SignIn" class="button" onclick="/* signUpClick() */ signUp()">Let's Go!</div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

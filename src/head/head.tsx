@@ -17,7 +17,7 @@ export default class Head extends React.Component<IProps, IState> {
 
     render() {
         return (
-            <header className="masthead">
+            <header className="masthead" id="masthead">
                 <div className="container d-flex h-100 align-items-center">
                     <div className="mx-auto text-center">
                         <h1 className="mx-auto my-0 mb-5">Erik Reider</h1>

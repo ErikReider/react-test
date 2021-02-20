@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slutprojekt</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/newStyles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/titlebar.css">
+    <link rel="stylesheet" href="css/item.css">
+    <link rel="stylesheet" href="css/newPost.css">
+    <link rel="stylesheet" href="css/profilePopup.css">
+
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-storage.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyBaL8t7Ok1pohpx6qysELJSh5Y44wEOYBw",
+            authDomain: "webb-slutprojekt.firebaseapp.com",
+            databaseURL: "https://webb-slutprojekt.firebaseio.com",
+            projectId: "webb-slutprojekt",
+            storageBucket: "webb-slutprojekt.appspot.com",
+            messagingSenderId: "407648790253",
+            appId: "1:407648790253:web:19efc3f95cf71c61824ee4",
+            measurementId: "G-N39356P6R6"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script type="module" src="js/index.js"></script>
+</head>
+
+<body>
+    <!--http://www.apache.org/licenses/LICENSE-2.0-->
+    <div class="titlebar">
+        <img src="./assets/Fxemoji_u1F44F.svg" alt="Site Logo" class="titlebar_logo">
+        <a id="title" href="index.html">Meme Review</a>
+        <span id="postButton"></span>
+        <img alt="ProfilePic" src="./assets/account.svg" id="tilebar_profilePic">
+    </div>
+    <div class="bottomContainer">
+        <div id="content">
+            <!-- <div class="item StyledOverlay" id="-1587820937_Post" style="opacity: 1;">
+                <img class="itemImg" alt="Loading..."
+                    src="https://firebasestorage.googleapis.com/v0/b/webb-slutprojekt.appspot.com/o/Post%2F-1587820937%2F1587820937?alt=media&amp;token=359a9562-b7e7-4b39-93af-9325065b1d3d"
+                    id="-1587820937_IMG">
+                <a class="itemTitle" href="/post.html?key=-1587820937" id="-1587820937_Title">Eagle</a>
+                <span class="itemSender">SenderSenderSenderSenderSenderSenderSenderSenderSenderSender</span>
+                <span class="itemSubtitle" id="-1587820937_Subtitle"></span>
+            </div> -->
+        </div>
+    </div>
+    <!-- <div class="newPost">
+        <div class="newPostContainer">
+            <h1>Add New Post</h1>
+            <input type="text" class="StyledInput" placeholder="Title">
+            <div class="newPostImagePreview">
+                <div class="StyledButton">
+                    <input type="file" name="file" id="file" class="inputfile" accept=".jpg, .jpeg, .png" />
+                    <label for="file">Choose a file</label>
+                </div>
+            </div>
+            <textarea placeholder="Text" id="newPostText" class="StyledInput newPostTextarea"></textarea>
+            <div class="newPostButtonContainer">
+                <div class="StyledButton">Post</div>
+                <div class="StyledButton">Cancel</div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="profilePopupParent">
+        <div class="StyledOverlay profilePopup">
+            <img class="profilePopupIMG" src="assets/rik-man.jpeg" alt="">
+            <span class="profilePopupTitle">KermitTheFrogger</span>
+            <span class="profilePopupChooser">Choose Image</span>
+            <div class="StyledButton profilePopupSignOut">Sign out</div>
+        </div>
+    </div> -->
+</body>
+
+</html>

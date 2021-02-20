@@ -1,0 +1,104 @@
+@import "../assets/variables.less";
+
+.projects-section {
+    padding: 10rem 0;
+    background-color: var(--backroundColor2) !important;
+
+    h1,
+    h4,
+    p {
+        color: var(--textColor) !important;
+    }
+
+    h1 {
+        opacity: 0.8;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    h4 {
+        opacity: 0.8;
+    }
+
+    p {
+        opacity: 0.5;
+    }
+
+    .featured {
+        .imgParent {
+            position: relative;
+        }
+
+        .small-container {
+            display: flex;
+            display: -webkit-flex;
+            justify-content: space-evenly;
+            -ms-flex-flow: wrap;
+            -webkit-flex-flow: wrap;
+            flex-flow: wrap;
+            align-items: center;
+            margin-top: 20px;
+
+            .btn-parent {
+                margin: 5px 0;
+                position: relative;
+                z-index: 1;
+                transition: transform 0.05s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.015);
+                }
+
+                &:hover::before {
+                    opacity: 1;
+                }
+
+                &::before {
+                    content: "";
+                    margin: auto;
+                    top: 10px;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    height: 100%;
+                    width: 90%;
+                    position: absolute;
+                    background-color: rgba(0, 0, 0, 0.2);
+                    filter: blur(8px);
+                    z-index: -1;
+                    opacity: 0;
+                    transition: opacity 0.2s ease-in-out;
+                }
+
+                .btn {
+                    position: relative;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+
+    .featured-text {
+        padding: 2rem;
+
+        @media (min-width: @lg) {
+            padding: 0 0 0 2rem;
+            border-left: 0.5rem solid @primary;
+        }
+    }
+
+    .project-text {
+        padding: 3rem;
+        font-size: 90%;
+
+        @media (min-width: @lg) {
+            padding: 5rem;
+
+            hr {
+                border-color: @primary;
+                border-width: 0.25rem;
+                width: 30%;
+            }
+        }
+    }
+}

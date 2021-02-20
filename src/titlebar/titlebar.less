@@ -1,8 +1,12 @@
-@import "../assets/colors.less";
+@import "../assets/variables.less";
 
 #mainNav {
     min-height: 3.5rem;
-    background-color: white;
+    background-color: var(--backgroundColorOverlay);
+
+    .nav-link {
+        cursor: pointer;
+    }
 
     .fa {
         margin-left: 4px;
@@ -13,71 +17,109 @@
         padding: 0.75rem;
         color: @primary;
         border: 1px solid @primary;
+
         &:focus {
             outline: none;
         }
     }
+
     .navbar-brand {
-        color: black;
+        color: var(--textColor);
         font-weight: 700;
         padding: 0.9rem 0;
     }
+
     .navbar-nav {
         .nav-item {
+            user-select: none;
+
+            @media (max-width: @lg) {
+                color: var(--textColorAlpha) !important;
+            }
+
             &:hover {
-                color: fade(white, 80%);
+                color: var(--textColor) !important;
                 outline: none;
                 background-color: transparent;
             }
+
             &:active,
             &:focus {
+                color: var(--textColor) !important;
                 outline: none;
                 background-color: transparent;
+            }
+
+            &.active {
+                color: var(--textColor) !important;
             }
         }
     }
-    @media (min-width: 1200px) {
+
+    @media (min-width: @lg) {
         padding-top: 0;
         padding-bottom: 0;
         border-bottom: none;
         background-color: transparent;
         transition: background-color 0.3s ease-in-out;
+
         .navbar-brand {
             padding: 0.5rem 0;
             color: white;
         }
+
+        .nav-item {
+            color: white !important;
+        }
+
         .nav-link {
+            color: var(--textColor) !important;
             transition: none;
             padding: 2rem 1.5rem;
-            color: white;
+            color: white !important;
+
             &:hover {
-                color: fade-out(white, 0.25);
+                color: fade(white, 75%) !important;
             }
+
             &:active {
-                color: white;
+                color: white !important;
             }
         }
+
         &.navbar-shrink {
-            background-color: white;
+            background-color: var(--backgroundColorOverlay);
+
             .navbar-brand {
-                color: black;
+                color: var(--textColor);
             }
+
             .nav-link {
-                color: black;
+                color: var(--textColor) !important;
                 padding: 1.5rem 1.5rem 1.25rem;
                 border-bottom: 0.25rem solid transparent;
+
                 &:hover {
-                    color: @primary;
+                    color: @primary !important;
                 }
-                &:active {
-                    color: darken(@primary, 15%);
+
+                &:active,
+                &:focus {
+                    color: var(--textColor) !important;
                 }
+
                 &.active {
-                    color: @primary;
+                    color: @primary !important;
                     outline: none;
                     border-bottom: 0.25rem solid @primary;
+
+                    &:active,
+                    &:focus {
+                        color: @primary !important;
+                    }
                 }
             }
         }
     }
 }
+

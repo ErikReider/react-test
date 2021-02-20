@@ -11,11 +11,30 @@
         }
     ],
     "skills": {
-        "languages": ["Flutter", "JavaScript", "C#", "HTML5", "pugJS", "CSS3", "Less", "SCSS"],
+        "languages": [
+            "Flutter",
+            "TypeScript",
+            "JavaScript",
+            "ReactJS",
+            "Python",
+            "C#",
+            "C++",
+            "Shell",
+            "HTML5",
+            "pug",
+            "CSS3",
+            "less",
+            "scss",
+            "Angular",
+            "Java"
+        ],
         "tools": [
             "GNU Linux",
-            "Bash",
+            "ZSH",
+            "Vim",
             "Visual Studio Code",
+            "Node / npm",
+            "Electron",
             "Bootstrap",
             "Git",
             "GitHub",

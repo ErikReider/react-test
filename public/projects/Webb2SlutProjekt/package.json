@@ -1,0 +1,17 @@
+{
+  "name": "slutprojekt",
+  "version": "1.0.0",
+  "description": "Memes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erik Reider",
+  "license": "ISC",
+  "keywords": [
+    "Jakob_är_rik_💲"
+  ],
+  "dependencies": {
+    "firebase": "^7.13.2"
+  }
+}

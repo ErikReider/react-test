@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/newStyles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/titlebar.css">
+    <link rel="stylesheet" href="css/newPost.css">
+    <link rel="stylesheet" href="css/profilePopup.css">
+    <link rel="stylesheet" href="./post/css/poststyle.css">
+    <link rel="stylesheet" href="./post/css/postComment.css">
+    <link rel="stylesheet" href="./post/css/imageOverlay.css">
+    <link rel="stylesheet" href="./post/css/error.css">
+
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-storage.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyBaL8t7Ok1pohpx6qysELJSh5Y44wEOYBw",
+            authDomain: "webb-slutprojekt.firebaseapp.com",
+            databaseURL: "https://webb-slutprojekt.firebaseio.com",
+            projectId: "webb-slutprojekt",
+            storageBucket: "webb-slutprojekt.appspot.com",
+            messagingSenderId: "407648790253",
+            appId: "1:407648790253:web:19efc3f95cf71c61824ee4",
+            measurementId: "G-N39356P6R6"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script type="module" src="./post/js/postindex.js"></script>
+</head>
+
+<body>
+    <!--http://www.apache.org/licenses/LICENSE-2.0-->
+    <div class="titlebar">
+        <img src="./assets/Fxemoji_u1F44F.svg" alt="Site Logo" class="titlebar_logo">
+        <a id="title" href="index.html">Meme Review</a>
+        <span id="postButton"></span>
+        <img alt="ProfilePic" src="./assets/account.svg" id="tilebar_profilePic">
+    </div>
+    <div class="bottomContainer">
+        <div class="StyledDiv parentDiv">
+            <div class="postMain">
+                <img alt="Loading..." id="PostImage" src="assets/transparent.png">
+                <h1 id="PostTitle"></h1>
+                <p id="PostText"></p>
+            </div>
+            <div class="startComment">
+                <span id="commentAs"></span>
+                <textarea placeholder="Comment..." class="StyledInput" id="MyComment"></textarea>
+                <div class="StyledButton postCommentButton" id="postCommentButton">Post</div>
+            </div>
+        </div>
+        <h3>Comments</h3>
+        <div id="postedComments">
+            <!-- <div class="CommentDiv">
+                <div class="Comment StyledDiv">
+                    <span class="CommentSender">fdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfno</span>
+                    <span class="CommentTime">Time</span>
+                    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text </p>
+                    <span class="CommentReply">reply</span>
+                </div>
+                <div class="CommentsToComments" id="comment849849849">
+                    <div class="Comment StyledDiv">
+                        <span class="CommentSender">fdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfnofdsgngfno</span>
+                        <span class="CommentTime">Time</span>
+                        <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text </p>
+                        <span class="CommentReply">reply</span>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- <div id="largeImageParent">
+        <img src="assets/rik-man.jpeg" alt="">
+    </div> -->
+
+    <!-- <div class="errorParent">
+        <div class="StyledOverlayTranslucent">
+            <span>Page not reachable at the moment. Would you like to reload or go back?</span>
+            <div class="StyledButton">Yes</div>
+            <div class="StyledButton">No</div>
+        </div>
+    </div> -->
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+[
+    {
+        "title": "Info Display",
+        "subTitle": "This project shows the current bus-status, the current weather and it tracks the time and date. The Program is built using Electron with TypeScript, Less, NodeJS and JSON. It caches the latest entry and displays an error message when an internet connection isn't available.",
+        "imageURL": "projects/InfoDisplay/screenshot.jpeg",
+        "repoURL": "https://github.com/ErikReider/infoDisplay"
+    },
+    {
+        "title": "JavaScript Advanced Scrolling Parallax",
+        "subTitle": "This library was build using JavaScript and is implemented on a website build with HTML and CSS. It gathers an image sequence and calculates which image to show depending on how far the user has scrolled.",
+        "imageURL": "projects/ScrollingParallax/screenshot.gif",
+        "repoURL": "https://github.com/ErikReider/ScrollingParallax",
+        "pageURL": "https://erikreider.github.io/portfolio_website/projects/ScrollingParallax/index.html"
+    },
+    {
+        "title": "JavaScript Test Game",
+        "subTitle": "A small test game that was made using JavaScript, HTML and CSS. The game generates a random level every browser refresh with enemies at random locations. For debugging purposes, a small dialog is visible to show the games stats and player variables.",
+        "imageURL": "projects/Game/screenshot.gif",
+        "repoURL": "https://github.com/ErikReider/JS-Test-Game/tree/main",
+        "pageURL": "https://erikreider.github.io/portfolio_website/projects/Game/index.html"
+    },
+    {
+        "title": "JavaScript Particles",
+        "subTitle": "A particle spawner that is made with JavaScript and is implemented on a website build with HTML and CSS. Each particle has its own random X and Y velocities to simulate random movement.",
+        "imageURL": "projects/Particles/screenshot.gif",
+        "repoURL": "https://github.com/ErikReider/JS-Canvas-With-Particles",
+        "pageURL": "https://erikreider.github.io/portfolio_website/projects/Particles/index.html"
+    },
+    {
+        "title": "Pizzeria Santos",
+        "subTitle": "A website for a fictional pizzeria that is made using HTML, CSS, and JavaScript with many tests in python using Selenium. It includes a schedule that dynamically updates depending on if the restaurant is open or not. The site also features a pizza delivery check which checks if the given zip-code is supported by the delivery service.",
+        "imageURL": "projects/PizzaWebsite/screenshot.png",
+        "repoURL": "https://github.com/piloteer44/SantosPizza",
+        "pageURL": "https://piloteer44.github.io/SantosPizza"
+    },
+    {
+        "title": "Twitter API",
+        "subTitle": "This repo includes multiple Python and Bash scripts that filter use the public Twitter API to get a filtered live tweet feed. The repo also includes many tests written in python. The scripts pushes the given filters and rules to Twitters servers and requests the live feed with the filters applied.",
+        "imageURL": "projects/TwitterAPI/screenshot.jpg",
+        "repoURL": "https://github.com/NTI-Gymnasieingenjor/RedCrossAction-Arctic"
+    },
+    {
+        "title": "Lunch Tag Security System",
+        "subTitle": "A security system that uses multiple Python scripts to check if a students scanned NFC tag is valid and if the owner of the tag is in time to lunch. This was made to prevent overcrowding the school cafeteria due to the infamous Corona virus. The repo also includes many tests written in python.",
+        "imageURL": "https://erikreider.github.io/portfolio_website/projects/LunchTag/screenshot.jpg",
+        "repoURL": "https://github.com/NTI-Gymnasieingenjor/Arctic-NFC-Lunch"
+    }
+]
